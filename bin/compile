@@ -14,6 +14,9 @@ require "language_pack/shell_helpers"
 
 require 'cloud_foundry/language_pack/extensions'
 
+
+Kernel.puts "keymon  buildpack"
+
 begin
   LanguagePack::Instrument.trace 'compile', 'app.compile' do
     if pack = LanguagePack.detect(ARGV[0], ARGV[1])
